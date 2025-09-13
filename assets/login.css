@@ -1,0 +1,141 @@
+body {
+	font-family: 'Work Sans' ;
+	font-size: 14px;
+	background-color:#FFFEF8;
+	display: flex;
+	flex-direction: column;		
+}
+
+html, body {
+	height: 100%;	
+} 
+  
+  main {
+	flex:1;	
+}
+  
+header {
+	display: flex;
+	justify-content: space-between;
+	margin: 10px 0;
+	margin-left:100px ;
+	margin-right:100px ;
+}
+
+h1{
+	display: flex;
+	flex-direction: column;
+	font-family: 'Syne';
+	font-size: 22px;
+	font-weight: 800;
+	color: #B1663C;
+}
+
+h1 > span {
+	font-family: 'Work Sans';
+	font-size:10px;
+	letter-spacing: 0.1em;
+;
+}
+
+h2{
+	font-family: 'Syne';
+	font-weight: 700;
+	font-size: 30px;
+	color: #1D6154
+}
+nav ul {
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+
+}
+nav li {
+	padding: 0 20px;
+	font-size: 1.2em;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+   
+}
+nav li a:hover{
+	color: #B1663C;
+}
+a {
+    color: black;
+	text-decoration: none;
+}
+
+#login {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'work sans';	
+}
+
+form input {
+    border: none;
+    box-shadow:3px 3px 7px 0px rgba(0, 0, 0, 0.2);
+    font-size: 25px;
+	background: white; 	
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #1D6154;
+    border-radius: 20px;
+    border: none;
+    height: 35px;
+    width: 160px;
+    font-family: 'work sans';
+    font-size: 15px;  
+}
+
+.connect{
+    display: flex;
+    justify-content: center;
+	margin-top:20px;
+	margin-bottom:20px;	
+}
+
+p{
+	margin-bottom:2px;
+}
+
+footer nav ul{
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	margin-right:100px;	
+}
+
+footer {
+	background-color: white;
+	padding:4px;
+	
+}
+
+li:hover {
+	color: #B1663C;
+}
+
+#error-message {
+    display: none;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+    color: red;   
+}
+#authLink {
+	font-weight:700;	
+}
+
+.social-icon {
+	width: 22px; 
+}

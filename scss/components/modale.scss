@@ -1,0 +1,291 @@
+@use '../utils/variables';
+
+.modale {
+    display: flex;
+    justify-content: center;
+    gap: 27px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+  
+  .btn-open-modal {
+    background-color: variables.$color-background-Off-White;
+    border: none;
+    margin-bottom: 20px;
+    padding: 8px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .fa-solid {
+    margin-right: 7px;
+  }
+  
+  #edition {
+    display: flex;
+    justify-content: center;
+    background-color: variables.$color-background-dark;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .edit,
+  #edition .fa-regular {
+    color: white;
+  }
+  
+  .modif {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+    font-family: Arial, sans-serif;
+    position: relative;
+   
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .bac-modal {
+    background: variables.$color-white;
+    width: 90%;
+    max-width: 300px;
+    max-height: 60vh;
+    overflow-y: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  .modal-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  #view-gallery,
+  #view-add {
+    display: none;
+  }
+  
+  #view-add {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .close-modal {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .titleModal {
+    margin: 15px 0 20px 0;
+    text-align: center;
+  }
+  
+  h3 {
+    margin: 0 0 10px 0;
+    text-align: center;
+  }
+  
+  #modalContent {
+    min-height: 200px;
+    border-bottom: 1px solid  variables.$color-grey-border;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5px;
+    row-gap: 7px;
+    justify-content: center;
+  }
+  
+  #modalContent figure {
+    width: calc(20% - 10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .image-wrapper {
+    position: relative;
+    height: 50px;
+    width: calc(20% - 10px);
+  }
+  
+  .image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .preview-image {
+    max-height: 140px;
+    object-fit: cover;
+    position: relative;
+    top: -10px;
+  }
+  
+  .delete-icon {
+    position: absolute;
+    top: 4px;
+    right: 3px;
+    background: variables.$color-primary;
+    color: variables.$color-white;
+    border-radius: 10%;
+    width: 13px;
+    height: 13px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .btn-ajout {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  #add-photo-btn {
+    background-color: variables.$color-blue-dark;
+    border: none;
+    padding: 7px 20px;
+    font-size: 10px;
+    padding-inline: 25px;
+    color: white;
+    border-radius: 60px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #add-photo-btn:hover {
+    background-color: variables.$color-blue-dark;
+  }
+  
+  .headModal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  i#goBack {
+    font-size: 14px;
+    cursor: pointer;
+    color: variables.$color-grey-dark;
+  }
+  
+  .titleModaladd h3 {
+    text-align: center;
+    margin: 0;
+  }
+  
+  .info-ajout form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .photo-uploader {
+    background-color: variables.$color-blue-bg;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 6px;
+    color: variables.$color-grey-medium;
+    position: relative;
+    height: 100px;
+  }
+  
+  .photo-uploader i {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  
+  .add {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 10px;
+  }
+  
+  .photo-uploader p {
+    font-size: 14px;
+    margin-top: 5px;
+    color: variables.$color-text-secondary;
+    font-family: "Work Sans", sans-serif;
+  }
+  
+  #add-button {
+    background-color: variables.$color-blue-light;
+    border-radius: 60px;
+    padding: 10px;
+    padding-inline: 30px;
+    color: variables.$color-blue-medium;
+    font-size: 10px;
+    cursor: pointer;
+  }
+  
+  #image-preview {
+    margin: 10px auto;
+    display: none;
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 6px;
+    object-fit: contain;
+    border: 1px solid variables.$color-grey-border;
+  }
+  
+  input[type="text"],
+  select {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid variables.$color-grey-border;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  label {
+    font-weight: 500;
+  }
+  
+  .valid {
+    text-align: center;
+  }
+  
+  .valid button {
+    border: none;
+    font-size: 10px;
+    color: white;
+    cursor: pointer;
+    padding: 7px;
+    border-radius: 60px;
+    background-color: variables.$color-grey-light;
+    padding-inline: 45px;
+  }
+  
+  

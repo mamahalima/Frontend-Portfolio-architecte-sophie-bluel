@@ -1,0 +1,16 @@
+@use '../utils/variables';
+
+body {
+  background-color: variables.$color-background-Off-White;
+  font-family: variables.$font-main;
+  font-size: variables.$font-size-base;
+  line-height: 1;
+}
+section {
+  margin: 50px 0;
+}
+.container{
+  max-width: 1140px;
+  margin:auto;
+}
+

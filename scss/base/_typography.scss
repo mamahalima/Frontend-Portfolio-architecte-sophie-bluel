@@ -1,0 +1,24 @@
+@use '../utils/variables';
+
+h1 {
+  display: flex;
+  flex-direction: column;
+  font-family: variables.$font-title;
+  font-size: 22px;
+  font-weight: 800;
+  color: variables.$color-secondary;
+
+  span {
+    font-family: variables.$font-main;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+  }
+}
+
+h2 {
+  font-family: variables.$font-title;
+  font-weight: 700;
+  font-size: 30px;
+  color: variables.$color-blue-dark;
+ 
+}

@@ -1,0 +1,28 @@
+@use '../utils/variables';
+
+nav {
+  ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 0 20px;
+    
+  }
+  li {
+    padding: 0 20px;
+    font-size: 1.2em;
+    text-decoration: none;
+    &:hover {
+      color: variables.$color-secondary;
+    }
+  }
+}
+
+nav a:hover{
+	color: variables.$color-secondary;
+}
+
+a {
+  color: variables.$color-primary ;
+  text-decoration: none;
+}

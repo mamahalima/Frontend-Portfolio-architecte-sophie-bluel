@@ -1,0 +1,36 @@
+@use '../utils/variables';
+
+#filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 40px;
+  
+  button {
+    color: variables.$color-blue-dark;
+    background-color: variables.$color-background-Off-White;
+    border-radius: 60px;
+    border: 1px solid variables.$color-blue-dark;
+    font-family: variables.$font-title;
+    font-size: 16px;
+    padding: 5px 10px;
+    cursor: pointer;
+
+    &:hover,
+    &.active {
+      background-color: variables.$color-blue-dark;
+      color: variables.$color-white;
+    }
+  }
+}
+
+input[type='submit'] {
+  font-family: variables.$font-title;
+  font-weight: 700;
+  color: variables.$color-white;
+  background-color: variables.$color-blue-dark;
+  margin: 2em auto;
+  width: 180px;
+  text-align: center;
+  border-radius: 60px;
+}
