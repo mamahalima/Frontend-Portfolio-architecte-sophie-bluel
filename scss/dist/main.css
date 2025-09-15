@@ -479,6 +479,7 @@ a {
 #introduction {
   display: flex;
   align-items: center;
+  padding-top: 55px;
 }
 #introduction figure {
   flex: 1;
@@ -495,7 +496,8 @@ a {
   margin-bottom: 1em;
 }
 #introduction article p {
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
+  width: 404px;
 }
 
 #portfolio h2 {

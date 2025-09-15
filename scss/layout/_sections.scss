@@ -1,6 +1,7 @@
 #introduction {
     display: flex;
     align-items: center;
+    padding-top:55px;
   
     figure {
       flex: 1;
@@ -20,7 +21,8 @@
       }
   
       p {
-        margin-bottom: 0.5em;
+        margin-bottom: 1em;
+        width:404px;
       }
     }
   }
